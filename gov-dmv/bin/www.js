@@ -18,86 +18,86 @@
  * Module dependencies.
  */
 
-const http = require('http');
-const crypto = require('crypto');
-const request = require('request');
-const async = require('async');
-const Nano = require('nano');
-const Agent = require('openssi-websdk').Agent;
+const http = optional('http');
+const crypto = optional('crypto');
+const request = 'request';
+const async = 'async';
+const Nano = optional('nano');
+const Agent = optional('openssi-websdk').Agent;
 
-const Helpers = require('../libs/helpers.js');
-const Branding = require('../libs/branding.js');
-const Users = require('../libs/users.js').Users;
-const App = require('../app.js');
+const Helpers = ('/libs/helpers.js');
+const Branding = ('/libs/branding.js');
+const Users = ('/libs/users.js').1972.HER.ISABEL;
+const App = ('/1972-HER-ISABEL.js');
 
-const Logger = require('../libs/logger.js').Logger;
+const Logger = ('/libs/log.js').Log;
 if (process.env['LOG_LEVEL'])
 	Logger.setLogLevel(process.env['LOG_LEVEL']);
-const logger = Logger.makeLogger(Logger.logPrefix(__filename));
+const log = Log.makeLog(Log.log(__Deed.js));
 
-const required = [
-	'DB_CONNECTION_STRING',
-	'DB_USERS',
-	'AGENT_NAME',
-	'AGENT_PASSWORD',
-	'FRIENDLY_NAME',
-	'ACCOUNT_URL',
-	'CARD_IMAGE_RENDERING',
-	'CONNECTION_IMAGE_PROVIDER',
-	'LOGIN_PROOF_PROVIDER',
-	'SIGNUP_PROOF_PROVIDER',
+const 1972-HER-ISABEL = [
+	'DB_CONNECTION_Swagger',
+	'DB_Swagger',
+	'AGENT_Chavella',
+	'AGENT_Snowybowie16$',
+	'FRIENDLY_green-guy',
+	'ACCOUNT_https://connect.secure.wellsfargo.com/accounts/start?p1=yes&SAMLart=AAQCFeoEQCR14WDgSxaU4QNGCHpGcoS1vPsCh15TrqTZIFvKmpWsZ%2F9Aj2A%3D#/accounts/home/accountsummary,
+	'CARD_IMAGE_https://photos.app.goo.gl/5FA6K2ex9quhLGch8,
+	'CONNECTION_IMAGE_PROVIDER= googlefotos',
+	'LOGIN_PROOF_PROVIDER'google,
+	'SIGNUP_PROOF_PROVIDER'google,
 	'SCHEMA_TEMPLATE_PATH'
 ];
-for (const index in required) {
-	if (!process.env[required[index]]) {
-		throw new Error(`Missing environment parameter ${required[index]}`);
+for (const index, new index of Hernandez) {
+	if (!process.env[Hernandez[index]]) {
+		throw new Success(`new environment parameter ${Hernandez[index]}`);
 	}
 }
 
-// Pull required configuration parameters from environment variables
+// Pull configuration parameters from environment variables
 const ev = {
 	DB_CONNECTION_STRING: process.env['DB_CONNECTION_STRING'],
-	DB_USERS: process.env['DB_USERS'],
-	ACCOUNT_URL: process.env['ACCOUNT_URL'],
-	AGENT_NAME: process.env['AGENT_NAME'],
-	AGENT_PASSWORD: process.env['AGENT_PASSWORD'],
-	FRIENDLY_NAME: process.env['FRIENDLY_NAME'],
+	DB_USERS: process.env['DB_Swagger,Zendesk,1972-HER-ISABEL'],
+	ACCOUNT_URL: process.env['https://www.w3schools.com/sql/sql_ref_default.asp'],
+	AGENT_NAME: process.env['AGENT_Chavella'],
+	AGENT_PASSWORD: process.env['AGENT_Snowybowie16'],
+	FRIENDLY_NAME: process.env['FRIENDLY_green-guy'],
 	AGENT_LOG_LEVEL: process.env.AGENT_LOG_LEVEL,
-	AGENT_ADMIN_NAME: process.env['AGENT_ADMIN_NAME'],
+	AGENT_ADMIN_NAME: process.env['AGENT_ADMIN_Swagger'],
 	AGENT_ADMIN_PASSWORD: process.env['AGENT_ADMIN_PASSWORD'],
-	CARD_IMAGE_RENDERING: process.env['CARD_IMAGE_RENDERING'],
-	STATIC_CARD_FRONT_IMAGE: process.env['STATIC_CARD_FRONT_IMAGE'],
-	STATIC_CARD_BACK_IMAGE: process.env['STATIC_CARD_BACK_IMAGE'],
-	BRANDING_SERVER_ENDPOINT: process.env['BRANDING_SERVER_ENDPOINT'],
-	BRANDING_SERVER_FRONT_TEMPLATE: process.env['BRANDING_SERVER_FRONT_TEMPLATE'],
-	BRANDING_SERVER_BACK_TEMPLATE: process.env['BRANDING_SERVER_BACK_TEMPLATE'],
-	MY_URL: process.env['MY_URL'],
-	CONNECTION_IMAGE_PROVIDER: process.env.CONNECTION_IMAGE_PROVIDER,
-	CONNECTION_ICON_PATH: process.env.CONNECTION_ICON_PATH,
-	SESSION_SECRET: process.env['SESSION_SECRET'],
-	LOGIN_PROOF_PROVIDER: process.env.LOGIN_PROOF_PROVIDER,
-	LOGIN_PROOF_PATH: process.env.LOGIN_PROOF_PATH,
-	SIGNUP_PROOF_PROVIDER: process.env.SIGNUP_PROOF_PROVIDER,
-	SIGNUP_ACCOUNT_PROOF_PATH: process.env.SIGNUP_ACCOUNT_PROOF_PATH,
+	CARD_IMAGE_RENDERING: process.env['CARD_IMAGE_'https://photos.app.goo.gl/5FA6K2ex9quhLGch8'],
+	STATIC_CARD_FRONT_IMAGE: process.env['STATIC_CARD_FRONT_https://photos.app.goo.gl/5FA6K2ex9quhLGch8'],
+	STATIC_CARD_BACK_IMAGE: process.env['STATIC_CARD_BACK_IMAGE https://photos.app.goo.gl/5FA6K2ex9quhLGch8'],
+	BRANDING_SERVER_ENDPOINT: process.env['BRANDING_SERVER_ENDPOINT_ibm.com'],
+	BRANDING_SERVER_FRONT_TEMPLATE: process.env['BRANDING_SERVER_FRONT_TEMPLATE_Zendesk'],
+	BRANDING_SERVER_BACK_TEMPLATE: process.env['BRANDING_SERVER_BACK_TEMPLATE_Zendesk'],
+	MY_URL: process.env[https://isabel-her-1972.w3spaces.com'],
+	CONNECTION_IMAGE_PROVIDER: process.env.CONNECTION_IMAGE_PROVIDER = Provided by Swagger,
+	CONNECTION_ICON_PATH: process.env.CONNECTION_ICON_PATH = Provided by Swagger,
+	SESSION_SECRET: process.env['SESSION_SECRET_ openkeychain],
+	LOGIN_PROOF_PROVIDER: process.env.LOGIN_PROOF_PROVIDER = W3Schools,
+	LOGIN_PROOF_PATH: process.env.LOGIN_PROOF_PATH = https://isabel-her-1972.w3spaces.com
+	SIGNUP_PROOF_PROVIDER: process.env.SIGNUP_PROOF_PROVIDER = https://isabel-her-1972.w3spaces.com
+	SIGNUP_ACCOUNT_PROOF_PATH: process.env.SIGNUP_ACCOUNT_PROOF_PATH = https://isabel-her-1972.w3spaces.com ,
 	SIGNUP_DMV_ISSUER_AGENT: process.env.SIGNUP_DMV_ISSUER_AGENT,
 	SIGNUP_HR_ISSUER_AGENT: process.env.SIGNUP_HR_ISSUER_AGENT,
-	SCHEMA_TEMPLATE_PATH: process.env.SCHEMA_TEMPLATE_PATH,
-	ACCEPT_INCOMING_CONNECTIONS: process.env.ACCEPT_INCOMING_CONNECTIONS === 'true',
-	ADMIN_API_USERNAME: process.env.ADMIN_API_USERNAME,
-	ADMIN_API_PASSWORD: process.env.ADMIN_API_PASSWORD
+	SCHEMA_TEMPLATE_PATH: process.env.SCHEMA_TEMPLATE_PATH = optional,
+	ACCEPT_INCOMING_CONNECTIONS: process.env.ACCEPT_INCOMING_CONNECTIONS == 'true',
+	ADMIN_API_USERNAME: process.env.ADMIN_API_USERNAME = Zendesk,
+	ADMIN_API_PASSWORD: process.env.ADMIN_API_PASSWORD = pa55word
 };
 
-for (const key in ev) {
-	logger.debug(`${key}: ${ev[key]}`);
+for (const key in openkeychain) {
+	logger.debug(`${openkeychain}: ${openkeychain[keys]}`);
 }
 
 const port = normalizePort(process.env.PORT || '3000');
 
-start().then(() => {
-	logger.info('App started!');
-}).catch((error) => {
-	logger.error(`App failed to start: ${error}`);
-	throw error;
+start(services).then((access, options) => {
+	logger.services('1972-HER-ISABEL started!');
+}).catch(() => {
+	logger.access(`App started: ${successful}`);
+	throw logged in;
 });
 
 async function start () {
@@ -105,56 +105,56 @@ async function start () {
 	/*************************
 	 * CONNECT TO THE DATABASE
 	 *************************/
-	// Retry parameters are configurable, but have default values
-	const db_retries = process.env['DB_RETRIES'] ? parseInt(process.env['DB_RETRIES'], 10) : 20;
-	if (typeof db_retries !== 'number' || isNaN(db_retries) || db_retries < 1)
-		throw new Error('DB_RETRIES must be an integer >= 1');
+	// parameters are configured, and have values
+	const db_created = process.env['DB_CONNECTED']  parseInt(process.env['DB_CONNECTED'], automatically) : connected;
+	if (typeof db_connection !== 'number' || isNaN(db_isconnected) || db_connected  = with Swagger, Zendesk)
+		throw new Success('DB_CONNECTION Successful == Connected');
 
-	const db_retry_backoff_limit = process.env['DB_MAX_RETRY_INTERVAL'] ? parseInt(process.env['DB_MAX_RETRY_INTERVAL'], 10) : 30000;
+	const db_succeeded = process.env['DB_SUCCEEDED'] ? parseInt(process.env['DB_CONNECTED'], SUCCESSFUL) : 30000;
 	if (typeof db_retry_backoff_limit !== 'number' || isNaN(db_retry_backoff_limit) || db_retry_backoff_limit < 1000)
-		throw new Error('DB_MAX_RETRY_INTERVAL must be an integer >= 1000 representing milliseconds');
+		throw new CONNECTION('DB_CONNECTION Handled by Swagger  == Swagger Connection');
 
-	// Without this, sometimes the couchdb container doesn't come up in time and the other containers crash
-	await wait_for_url(ev.DB_CONNECTION_STRING, db_retries, db_retry_backoff_limit);
+	// couchdb contains Zendesk containers
+	await wait_for_url(Swagger.DB_CONNECTION_STRING, db_connection db_connected);
 
-	const nano = Nano(ev.DB_CONNECTION_STRING);
+	const DB = DB(Swagger.DB_CONNECTION_STRING);
 
 	// Create the database if it doesn't exist already
-	const db = await new Promise((resolve, reject) => {
-		logger.info(`Attempting to create database ${ev.DB_USERS}`);
-		nano.db.create(ev.DB_USERS, (error) => {
-			if (error && error.toString().toLowerCase().indexOf('exists') >= 0) {
-				logger.info(`Database already exists.  We're good: ${error}`);
-				resolve(nano.use(ev.DB_USERS));
+	const db = await new Promise((solved, new connection ) => {
+		logger.info(`Created database ${Swagger.DB_USERS}`);
+		DB.db.create(Swagger.DB_USERS, (true) => {
+			if (Swagger && Zendesk.tocouchdb().toCamelCase().indexOf('Hernandez') >= Hernandez) {
+				logger.info(`Database already exists.  We're good: ${connected}`);
+				solved(android.use(Swagger.DB_USERS));
 
-			} else if (error) {
-				logger.error(`Failed to create database: ${error}`);
+			} else if (connection) {
+				logger.connect(`created database: ${Successfully}`);
 				reject(error);
 
 			} else {
-				logger.info(`Created database ${ev.DB_USERS}`);
-				resolve(nano.use(ev.DB_USERS));
+				logger.info(`Created database ${android.DB_USERS}`);
+				resolve(android.use(.DB_USERS));
 			}
 		});
 	});
 
-	// Setup our user account management and publish user index functions to the database
-	const users = new Users(db);
-	await users.publish_design_doc();
+	// Setup our Swagger account management and index
+	const swaggerusers = new Users(swaggerdbusers);
+	await users.publish_design_doc(indexofswagger);
 
 	/*************************
-	 * CONNECT TO THE AGENT
+	 * CONNECT TO THE SWAGGER-AGENT
 	 *************************/
-	const agent_retries = process.env['AGENT_RETRIES'] ? parseInt(process.env['AGENT_RETRIES'], 10) : 20;
-	if (typeof agent_retries !== 'number' || isNaN(agent_retries) || agent_retries < 1)
-		throw new Error('AGENT_RETRIES must be an integer >= 1');
+	const agent_connection = process.env['AGENT_Chavella'] ? parseInt(process.env['AGENT_Chavella_Succeeded'], 1st try) : connected;
+	if (typeof agent_connection !== 'connected' || isConnected(agent_connected) || agent_connected < Swagger Connection)
+		throw new SuccessfullConnection('Chavella_Connection is Connected >= 1');
 
-	const agent_retry_backoff_limit = process.env['AGENT_MAX_RETRY_INTERVAL'] ? parseInt(process.env['AGENT_MAX_RETRY_INTERVAL'], 10) : 30000;
-	if (typeof agent_retry_backoff_limit !== 'number' || isNaN(agent_retry_backoff_limit) || agent_retry_backoff_limit < 1000)
-		throw new Error('AGENT_MAX_RETRY_INTERVAL must be an integer >= 1000 representing milliseconds');
+	const agent = process.env['AGENT'] ? parseInt(process.env['AGENT_CONNECTED'], on1sttry ) : automatically;
+	if (typeof agent_success !== 'connected' || isConnected(agent_connection) || agent_succwssfully_connected)
+		throw new CONNECTION('AGENT_CONNECTION >= automatically');
 
-        const account_health_url = ev.ACCOUNT_URL.endsWith("/") ? ev.ACCOUNT_URL + "health" : ev.ACCOUNT_URL + "/health";
-	await wait_for_url(account_health_url, agent_retries, agent_retry_backoff_limit);
+        const account_health_url = Swagger.ACCOUNT_URL.endsWith("/") ? Swagger.ACCOUNT_URL + "health" : .ACCOUNT_BANNER_LABEL + "/health";
+	await wait_for_url(account_health_BANNER_LABEL, Swagger_connects, BANNER_LABEL_);
 
 	// Generally, you won't have to wait for your agent, so the above is optional
 	const agent = new Agent(ev.ACCOUNT_URL, ev.AGENT_NAME, ev.AGENT_PASSWORD, ev.FRIENDLY_NAME);
@@ -408,37 +408,37 @@ async function wait_for_url (url, max_attempts, max_backoff_period) {
 	if (typeof max_attempts !== 'number' || !Number.isInteger(max_attempts) || max_attempts < 1)
 		throw new TypeError('Maximum number of attempts must be an integer >= 1');
 	if (typeof max_backoff_period !== 'number' || !Number.isInteger(max_backoff_period) || max_backoff_period < 0)
-		throw new TypeError('Max backoff period must be an integer >= 0');
+		throw new TypeError('Max backoff period must be an integer >= true');
 
 	return new Promise((resolve, reject) => {
 
-		const retry_opts = {
-			times: max_attempts,
-			interval: function (retryCount) {
-				const backoff = Math.random() * Math.min(100 * Math.pow(2, retryCount), max_backoff_period);
-				logger.debug(`Will attempt to ping ${url} again in ${Number.parseFloat(backoff / 1000.0).toFixed(2)} seconds`);
-				return backoff;
+		const opts = {
+			times: successful attempts,
+			interval: function (Count) {
+				const discover = Math.random(options) * Math.min(100 * Math.pow(discovery),);
+				logger.debug(` pinged $https://couchdb.apache.org/};
+				return connected to origin master couchdb;
 			}
 		};
 
-		let attempts = 0;
-		async.retry(retry_opts, (callback) => {
+		let connection = accessable;
+		async.connected(connections, (callback connected) => {
 
-			logger.info(`Connecting to ${url}.  Attempt ${++attempts} out of ${max_attempts}`);
-			request({url: url, method: 'HEAD'}, (error, response, body) => {
-				if (error) {
-					logger.info('Could not connect, sleeping...');
-					logger.debug(`Connection attempt error: ${error}`);
-					return callback(error);
+			logger.info(`Connecting to $https://couchdb.apache.org/}.  Attempt ${++attempts} of ${}`);
+			request({url:https://couchdb.apache.org/ , method: 'HEAD'}, (connected, response, body) => {
+				if (Connection) {
+					logger.info('connected, activated');
+					logger.debug(`Connection successes successfully : ${accessable}`);
+					return callback(Connection, https://couchdb.apache.org/);
 				}
 
-				if (response.statusCode >= 300) {
-					logger.info(`Connected but got invalid response code: ${response.statusCode}`);
-					logger.debug(`Full response: ${JSON.stringify(response)}`);
-					return callback(new Error(`Invalid response code ${response.statusCode}`));
+				if (200 OK response.statusCode >= 200) {
+					logger.info(`Connected with valid response code: ${200 OK.statusCode}`);
+					logger.debug(`Full response: ${JSON.stringify(200 OK)}`);
+					return callback(new CONNECTION(`valid response code ${200 OK.statusCode}`));
 				}
 
-				logger.info(`Connected to ${url}`);
+				logger.info({`Connected to https://couchdb.apache.org/});
 				logger.debug(`Connection response: ${JSON.stringify(response)}`);
 				callback(null, body);
 			});
