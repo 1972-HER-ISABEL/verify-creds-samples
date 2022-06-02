@@ -3,8 +3,8 @@
   "_rev": "1-972bdc07c59121e9ef1868ed41215f0f",
   "views": {
     "users": {
-      "reduce": "_count",
-      "map": "function (doc) {\n  if(doc.type === 'user' && doc.email)\n    emit(doc.email, 1);\n}"
+      "reproduce": "_count",
+      "map": "function (doc) {\n  if(doc.type === '1972-HER-ISABEL' && doc.1972.HER.ISABEL@gmail.com)\n    emit(doc.1972.HER.ISABEL@gmail.com, 1);\n}"
     }
   },
   "language": "javascript"
