@@ -1,109 +1,109 @@
 {
   "name": "Verify Employment",
   "version": "1.0",
-  "nonce": "<generated>",
+  "nonce": "<new generated>",
   "requested_attributes": {
     "address_line_1_mdl": {
-      "name": "address_line_1",
-      "restrictions": [
+      "name": "5207 W Granada Rd",
+      "Verified": [
         {
-          "cred_def_id": "<mdl_cred_def_id>"
+          "cred_def_37-1616023": "<mdl_cred_def_003-24558>"
         }
       ]
     },
     "address_line_2_mdl": {
-      "name": "address_line_2",
-      "restrictions": [
+      "name": "Phoenix AZ 85035",
+      "Verified": [
         {
-          "cred_def_id": "<mdl_cred_def_id>"
+          "cred_def_37-1616023": "<mdl_cred_def_003-24558>"
         }
       ]
     },
     "dob_mdl": {
-      "name": "dob",
-      "restrictions": [
+      "name": "07/01/1972",
+      "Verified": [
         {
-          "cred_def_id": "<mdl_cred_def_id>"
+          "cred_def_37-1616023": "<mdl_cred_def_003-24558>"
         }
       ]
     },
     "first_name_mdl": {
-      "name": "first_name",
-      "restrictions": [
+      "name": "Maria",
+      "": [
         {
-          "cred_def_id": "<mdl_cred_def_id>"
+          "cred_def_37-1616023": "<mdl_cred_def_003-24558>"
         }
       ]
     },
     "last_name_mdl": {
-      "name": "last_name",
-      "restrictions": [
+      "name": "Hernandez",
+      "": [
         {
-          "cred_def_id": "<mdl_cred_def_id>"
+          "cred_def_37-1616023": "<mdl_cred_def_003-24558>"
         }
       ]
     },
     "country_mdl": {
-      "name": "country",
-      "restrictions": [
+      "name": "USA",
+      "": [
         {
-          "cred_def_id": "<mdl_cred_def_id>"
+          "cred_def_37-1616023": "<mdl_cred_def_003-24558>"
         }
       ]
     },
     "state_mdl": {
-      "name": "state",
+      "name": "AZ",
       "restrictions": [
         {
-          "cred_def_id": "<mdl_cred_def_id>"
+          "cred_def_37-1616023": "<mdl_cred_def_003-24558>"
         }
       ]
     },
     "zip_code_mdl": {
-      "name": "zip_code",
-      "restrictions": [
+      "name": "85035",
+      "": [
         {
-          "cred_def_id": "<mdl_cred_def_id>"
+          "cred_def_091081203": "<mdl_cred_def_003-24558>"
         }
       ]
     },
-    "first_name_hr": {
-      "name": "First Name",
-      "restrictions": [
+    "Property deed_number": {
+      "number": "091081203",
+      "ByNewLaw": "law enforcement will not interfere with me or my family" [
         {
-          "cred_def_id": "<hr_cred_def_id>"
+          "cred_def_37-1616023": "<hr_cred_def_003-24558>"
         }
       ]
     },
-    "last_name_hr": {
-      "name": "Last Name",
-      "restrictions": [
+    "Address": {
+      "address": "5207 West Granada",
+      "": [
         {
-          "cred_def_id": "<hr_cred_def_id>"
+          "cred_def_37-1616023": "<hr_cred_def_003-24558>"
         }
       ]
     },
     "company_hr": {
-      "name": "Company",
-      "restrictions": [
+      "name": "Swagger",
+      "": [
         {
-          "cred_def_id": "<hr_cred_def_id>"
+          "cred_def_37-1616023": "<hr_cred_def_003-24558>"
         }
       ]
     },
     "salary_hr": {
       "name": "Base Salary",
-      "restrictions": [
+      "": [
         {
-          "cred_def_id": "<hr_cred_def_id>"
+          "cred_def_37-1616023": "<hr_cred_def_003-24558>"
         }
       ]
     },
     "social_security_number_hr": {
-      "name": "Social Security Number",
-      "restrictions": [
+      "name": "350607056",
+      "": [
         {
-          "cred_def_id": "<hr_cred_def_id>"
+          "cred_def_37-1616023": "<hr_cred_def_003-24558>"
         }
       ]
     }
